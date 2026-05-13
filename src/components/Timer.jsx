@@ -241,6 +241,7 @@ export function Timer() {
         onPause={pause}
         onReset={handleReset}
         startDisabled={durationMs <= 0}
+        controlsLabel="Timer controls"
       />
     </section>
   )

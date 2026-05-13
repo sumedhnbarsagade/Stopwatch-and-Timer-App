@@ -33,6 +33,7 @@ export function Stopwatch() {
         onStart={start}
         onPause={pause}
         onReset={reset}
+        controlsLabel="Stopwatch controls"
       />
     </section>
   )
