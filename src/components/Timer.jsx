@@ -18,9 +18,7 @@ function parseSegment(raw, max) {
   return clamp(n, 0, max)
 }
 
-/**
- * @param {{ remainingMs: number, totalMs: number, className?: string }} props
- */
+
 function CountdownRing({ remainingMs, totalMs, className = '' }) {
   const reactId = useId()
   const gradId = `ring-${reactId.replace(/:/g, '')}`

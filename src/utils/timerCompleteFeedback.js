@@ -1,4 +1,3 @@
-/** @param {number} frequencyHz */
 export function playCompletionChime(frequencyHz = 880) {
   try {
     const ctx = new AudioContext()
@@ -19,7 +18,6 @@ export function playCompletionChime(frequencyHz = 880) {
   }
 }
 
-/** @param {string} title @param {string} [body] */
 export function notifyTimerComplete(title, body = 'Your countdown reached zero.') {
   if (typeof Notification === 'undefined') return
   if (Notification.permission !== 'granted') return

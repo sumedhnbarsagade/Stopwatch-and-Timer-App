@@ -1,8 +1,3 @@
-/**
- * @param {number} ms
- * @param {{ showFraction?: boolean }} [options]
- * @returns {string}
- */
 export function formatTime(ms, options = {}) {
   const { showFraction = true } = options
   const clamped = Math.max(0, Math.floor(ms))

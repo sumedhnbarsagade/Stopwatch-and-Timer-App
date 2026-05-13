@@ -16,10 +16,9 @@ export default function App() {
           <h1 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             Stopwatch & Timer
           </h1>
-          {/* <p className="mx-auto mt-3 max-w-xl text-pretty text-sm text-white/60 sm:text-base">
-            Precision timing driven by wall clock deltas, responsive glass UI, and a
-            countdown ring that stays honest even when the tab throttles timers.
-          </p> */}
+          <p className="mx-auto mt-3 max-w-xl text-pretty text-sm text-white/60 sm:text-base">
+          A simple stopwatch and timer app built with React and Tailwind CSS.
+          </p>
         </header>
 
         <div

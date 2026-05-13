@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-/**
- * @param {object} opts
- * @param {number} opts.durationMs
- * @param {() => void} [opts.onComplete]
- */
 export function useCountdownTimer({ durationMs, onComplete }) {
   const [remainingMs, setRemainingMs] = useState(durationMs)
   const [isActive, setIsActive] = useState(false)

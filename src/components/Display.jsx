@@ -1,10 +1,6 @@
 import { memo } from 'react'
 import { formatTime } from '../utils/formatTime'
 
-/**
- * Read-only time readout; memoized to avoid unnecessary string work upstream.
- * @param {{ ms: number, showFraction?: boolean, className?: string, label?: string }} props
- */
 export const Display = memo(function Display({
   ms,
   showFraction = true,

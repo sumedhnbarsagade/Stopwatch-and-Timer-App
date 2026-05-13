@@ -1,15 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-/**
- * Elapsed wall-clock timer: uses Date.now() deltas so the display does not drift.
- * @returns {{
- *   elapsedMs: number,
- *   isActive: boolean,
- *   start: () => void,
- *   pause: () => void,
- *   reset: () => void,
- * }}
- */
 export function usePrecisionTimer() {
   const [elapsedMs, setElapsedMs] = useState(0)
   const [isActive, setIsActive] = useState(false)
